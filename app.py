@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("🔐 Énigmes du jeu de piste")
+st.title("🔐 Énigmes à travers le monde.")
 
 def poser_enigme(numero, question, reponses, bonne_reponse_key):
     st.subheader(f"Énigme {numero}")
@@ -53,6 +53,6 @@ if st.button("Valider mes réponses"):
     if (rep1 == bonne_reponses["enigme1"] and
         rep2 == bonne_reponses["enigme2"] and
         rep3 == bonne_reponses["enigme3"]):
-        st.success("✅ Identité confirmée : Toutes les clés pour résoudre cette énigme se trouvent entre les pages 6 et 7.")
+        st.success("✅ Identité confirmée : Utilisez le calque numéro trois en annexe pour résoudre cette énigme.")
     else:
         st.error("❌ Certaines réponses sont incorrectes. Réessayez !")
